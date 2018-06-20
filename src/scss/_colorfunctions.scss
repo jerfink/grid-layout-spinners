@@ -1,0 +1,12 @@
+
+$darken-color: #fff;
+$step: 5;
+$opacity: .2;
+
+@while $step <= 8 {
+    .app_layout .box_color:nth-child(#{$step}) {
+        background-color: rgba($darken-color, $opacity);
+    }
+    $step: $step + 1;
+    $opacity: $opacity + .2;
+}

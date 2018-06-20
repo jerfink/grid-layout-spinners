@@ -1,0 +1,19 @@
+
+.demo-input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #fff;
+    color: #f5f5f5;
+    font-size: 1rem;
+    padding: 1rem;
+    transition: background-color .4s,
+                border .2s,
+                box-shadow .4s,
+                transform .4s cubic-bezier(.85,-.4,.29,1.44);
+
+    &:focus {
+        background: rgba(0, 0, 0, 0.8);
+        border: 1px solid limegreen;
+        transform: scale(1.5);
+        box-shadow: 2px 1px 10px 10px rgba(255,255,255,.3);
+    }
+}
